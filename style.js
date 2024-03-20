@@ -24,13 +24,13 @@ const startingPlantsUpdated = 100; // Starting with 100 plants
 const minSpacePerPlant = 0.8; // square meters
 const weeksUpdated = 10; // For a period of 10 weeks
 
-// Calculate the final plant count after 10 weeks without pruning
+// Calculate after 10 weeks without pruning
 const finalPlantCount = startingPlantsUpdated * Math.pow(2, weeksUpdated);
 
-// Calculate the additional space required based on the final plant count
+// Calculate space required based on the final plant count
 const additionalSpaceRequired = finalPlantCount * minSpacePerPlant;
 
-// Calculate the radius of the expanded garden required to accommodate the final plant count
+// Calculate the radius garden  
 const expandedGardenRadius = Math.sqrt(additionalSpaceRequired / PI);
 
 console.log(`Additional space required: ${additionalSpaceRequired} square meters.`);
